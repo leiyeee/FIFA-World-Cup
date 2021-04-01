@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS171 - HW 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container" style="margin-top:100px">
+
+        <h1>FIFA World Cup<sup>TM</sup></h1>
+        <h2>All Time Statistics</h2>
+        <div class="row">
+            <div class="col-sm" style="padding-top: 10px">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="ranking-type" style="color: aliceblue">Chart data</label>
+                        <select class="form-control" id="ranking-type" style="margin-left:10px; color:white;">
+                            <option value="GOALS">Goals</option>
+                            <option value="AVERAGE_GOALS">Average goals</option>
+                            <option value="MATCHES">Matches</option>
+                            <option value="TEAMS">Teams</option>
+                            <option value="AVERAGE_ATTENDANCE">Average attendance</option>
+                        </select>
+                        
+                    </div>
+                </form>
+                <div id="chart-area"></div>
+            </div>
+
+            <div class="col-sm" style="padding-top: 10px">
+                <p style="margin-left: -7px;">Date range</p>
+                <p><input type="text" id="range" readonly></p>
+                <div id="slider-range"></div>
+                <div>
+                    <p id="info" style="padding-top: 20px"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Load JS libraries: jQuery, bootstrap, D3, D3 tooltip -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/d3-tip.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Your implementation -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
